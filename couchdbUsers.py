@@ -49,7 +49,8 @@ if __name__ == "__main__":
         'email': row['Corteva email'],
         'admin': {
           'force_password_change': True
-        }
+        },
+        'passwordAttempts': 0,
       }
       print(i,':')
       print(json.dumps(newUser))
@@ -69,4 +70,4 @@ if __name__ == "__main__":
           print('Saved:  ', doc)
 
       print()
-     pi
+  
